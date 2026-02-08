@@ -1,15 +1,16 @@
 1.How many earthquakes are listed in the table?
 
- Command: wc signif.txt.tsv
- Ans: 5959
+ Command: tail -n +2 Y*.tsv | wc -l
+ Ans: 5958
 
 2.How many columns are in the table?
 
  Command: head -1 *.tsv
  Ans: 47
 
-3.Use the cut command to create a new file that just has the data from the columns for YEAR, EQ_PRIMARY and COUNTRY. Hint: you can get the column numbers by using the head command to
-  view the first row and then visually count the column numbers for the above fields (there is also a unix command to do this, but we didn't cover it in class). Call the new data file
+3.Use the cut command to create a new file that just has the data from the columns for YEAR, EQ_PRIMARY and COUNTRY. Hint: you can get the
+  column numbers by using the head command to view the first row and then visually count the column numbers for the above fields (there is also
+  a unix command to do this, but we didn't cover it in class). Call the new data file
   'Year_Mag_Country.tsv'. You can use 'Year_Mag_Country.tsv' for the rest of the exercises below.
 
  Command: cut -f 3,10,18 signif.txt.tsv > Year_Mag_Country.tsv
@@ -28,10 +29,11 @@
      1964     9.2    USA
      1960     9.5    CHILE
 
-6.How many unique countries are listed in the database? Use cut,sort,uniq, wc and a few pipes | to form a single expression that answers this question.
+6.How many unique countries are listed in the database? Use cut,sort,uniq, wc and a few pipes | to form a single expression that answers this
+  question.
 
- Command: cut -f3 Y*.tsv|sort|uniq|wc
- Ans:154
+ Command: tail -n +2 Y*.tsv|cut -f3 |sort|uniq|wc
+ Ans:153
 
 7.Use the grep command to count how many earthquakes in the database are located in the USA or USA TERRITORY
 
@@ -44,8 +46,8 @@
  Command:grep "USA" Y*.tsv | grep -v "USA TERRITORY"|wc
  Ans:255
 
-9.Compute the total number of earthquakes in each country and then display the top ten countries along with the number of earthquakes. Hint: this can be done with a command sequence
-  similar to exercise 5, but requires a specific argument to be used with uniq.
+9.Compute the total number of earthquakes in each country and then display the top ten countries along with the number of earthquakes. Hint:
+  this can be done with a command sequence similar to exercise 5, but requires a specific argument to be used with uniq.
 
   Command:cut -f3 Y*.tsv|sort|uniq -c|sort -g|tail -10
   Ans:193 MEXICO
@@ -59,8 +61,9 @@
       400 JAPAN
       579 CHINA
           
-10.Create a shell script named countEq.sh that returns the total number of earthquakes for a given country, where the country is specified as the option when calling the script. Hint:
-   see the Shell Script notes and use the special variable $1. Paste your script below and give an example calling sequence for country USA.
+10.Create a shell script named countEq.sh that returns the total number of earthquakes for a given country, where the country is specified as
+   the option when calling the script. Hint: see the Shell Script notes and use the special variable $1. Paste your script below and give an
+   example calling sequence for country USA.
 
    Script: #!/bin/bash
 
@@ -72,8 +75,7 @@
            echo "$y=$answer"
 
    Example: USA=294
-11.Create a shell script named countEq_getLargestEq.sh that returns both the total number of earthquakes AND the largest earthquake for a given country, where the country is specified as
-   the option when calling the script. Use the echo command before each command to create labels for each returned value. Paste your script below and give an example calling sequence for
+11.Create a shell script named countEq_getLargestEq.sh that returns both the total number of earthquakes AND the largest earthquake for a given country, where the country is specified as the option when calling the script. Use the echo command before each command to create labels for each returned value. Paste your script below and give an example calling sequence for
    country CHILE.
 
    Script: #!/bin/bash
@@ -91,8 +93,9 @@
    Example: CHILE's total earthquake count=192;
             CHILE's largest earthquake magnitude is 9.5 in 1960.
 
-12.Compute the total number of earthquakes each year and then output a sorted list of the top ten years with the most earthquakes. Paste your command and the top ten list below.
-   Command:cut -f1 Year_Mag_Country.tsv|uniq -c|sort -g|tail -10
+12.Compute the total number of earthquakes each year and then output a sorted list of the top ten years with the most earthquakes. Paste your
+   command and the top ten list below.
+   Command:cut -f1 Year_Mag_Country.tsv|sort|uniq -c|sort -g|tail -10
    Ans: 59 2011
         60 2002
         60 2005

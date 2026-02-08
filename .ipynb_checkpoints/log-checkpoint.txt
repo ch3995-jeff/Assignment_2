@@ -1,0 +1,251 @@
+    1  whoami;hostname;pwd;ls -ld $HOME;ls -ld /data9/G5053/work/$USER;ls -la;id
+    2  passwd
+    3  pwd
+    4  cd /home/ch3995
+    5  cd snap
+    6  cd /home/ch3995
+    7  passwd
+    8  ls -la /home/ch3995/resume
+    9  # 刪除所有內容（包含隱藏檔案）
+   10  rm -rf /home/ch3995/resume/{*,.*} 2>/dev/null
+   11  # 或者直接刪除整個目錄再重建
+   12  rm -rf /home/ch3995/resume && mkdir /home/ch3995/resume
+   13  rm -rf /home/ch3995/resume/{*,.*} 2>/dev/null
+   14  git clone https://github.com/ch3995-jeff/resume
+   15  cd resume
+   16  pwd
+   17  git clone https://github.com/ch3995-jeff/try
+   18  ls
+   19  cd try
+   20  ls
+   21  ls- a
+   22  ls -a
+   23  ls- a
+   24  clear
+   25  touch myfile.txt
+   26  ls
+   27  git add myfile.txt
+   28  git add .
+   29  git status
+   30  git commit -m 'create new textfile'
+   31  git config --global user.email "ch3995@columbia.edu"
+   32  git config --global user.name "ch3995-jeff"
+   33  git commit -m 'create new textfile'
+   34  git push
+   35  ssh-keygen -t rsa -b 4096 -C ch3995@Columbia.edu
+   36  cd .ssh
+   37  ls .ssh
+   38  cat /home/ch3995/.ssh/id_rsa.pub
+   39  ls -al~/.ssh
+   40  ls -al ~/.ssh
+   41  eval $(ssh-agent)
+   42  ssh-add /home/ch3995/.ssh/id_rsa
+   43  git push
+   44  git remote set-url origin git@github.com:ch3995-jeff/try.git
+   45  git push -u origin main
+   46  git remote set-url origin https://github.com/ch3995-jeff/try/issues
+   47  git push -u origin main
+   48  git remote set-url origin https://github.com/ch3995-jeff/try
+   49  git push -u origin main
+   50  git remote set-url origin https://github.com/ch3995-jeff/try.gi
+   51  git remote set-url origin https://github.com/ch3995-jeff/try.git
+   52  git push -u origin main
+   53  git remote set-url origin git@github.com:ch3995-jeff/try.git
+   54  git push -u origin main
+   55  git add .git status
+   56  git status
+   57  git diff
+   58  git push
+   59  git add.
+   60  git add .
+   61  git push
+   62  git add .
+   63  git push -u origin main
+   64  git commit -m 'added some texts'
+   65  git push
+   66  git log
+   67  git reverse d278ed7f15d6a6082ac18bbd8bf2cfd581fe06aa
+   68  git revert d278ed7f15d6a6082ac18bbd8bf2cfd581fe06aa
+   69  git revert 3c91d545885d5f816625a3e3ac59573991f3b4fb
+   70  git add .
+   71  git revert 3c91d545885d5f816625a3e3ac59573991f3b4fb
+   72  git push
+   73  git status
+   74  cd resume
+   75  pwc
+   76  pwa
+   77  pwd
+   78  /home/ch3995/resume
+   79  cd /home/ch3995/resume
+   80  git inti
+   81  git init
+   82  git add. 
+   83  git add .
+   84  git commit -m "new repo"
+   85  touch ReadME.md
+   86  git add. 
+   87  git add .
+   88  git commit -m "new"
+   89  git push
+   90  git copy 
+   91  git clone
+   92  git clone https://github.com/ch3995-jeff/resume
+   93  cd /home/ch3995
+   94  clear
+   95  ssh-keygen -t rsa -b 4096 -C ch3995@Columbia.edu
+   96  head signif.txt.tsv
+   97  look signif.txt.tsv
+   98  lr signif.txt.tsv
+   99  ls
+  100  
+  101  q
+  102  head signif.txt.tsv earthquake
+  103  head signif.txt.tsv 
+  104  less signif.txt.tsv
+  105  wr signif.txt.tsv
+  106  wc signif.txt.tsv
+  107  head -1 signif.txt.tsv
+  108  # 取第一行，用 awk 印出欄位數 NF
+  109  head -1 file.tsv | awk -F'\t' '{print NF}'
+  110  head -1 signif.txt.tsv | awk -F'\t' '{print NF}'
+  111  head -1 signif.txt.tsv
+  112  count ' "
+
+
+  113  count ' '
+  114  cp /data9/G5053/data/danielmw/* .
+  115  cd class_exercise
+  116  less ~.csv
+  117  less *.csv
+  118  head -1 *.csv
+  119  head -2 *.csv
+  120  head -3 *.csv
+  121  tail -5 *.csv
+  122  cd
+  123  tail *.tsv
+  124  cd class_exercise
+  125  tail -5 *.csv
+  126  head -100 *.csv | tail -1 *.csv
+  127  head -100 *.csv | tail -1 
+  128  wc *.csv
+  129  wc head -1 s*.csv
+  130  wc |head -1 s*.csv
+  131  cd
+  132  wc |head -1 s*.csv
+  133  wc |head -1 s*.tsv
+  134  wc head -1 s*.tsv
+  135  cd ca;ss_exercise
+  136  cd class_exercise
+  137  grep "2020" *.csv
+  138  grap "Jan" *.csv
+  139  grep "Jan" *.csv
+  140  man grep
+  141  grep "[0-9]" *.csv | cut -d "," -f -1
+  142  grep "[0-9]" *.csv | cut -d "," -f -2
+  143  grep "[0-9]" *.csv | cut -d "," -f -1,2
+  144  grep "[0-9]" *.csv | cut -d "," -f -3
+  145  head -1 *.csv
+  146  head -2 *.csv
+  147  grep "[0-9]" *.csv | cut -d "," 
+  148  grep "[0-9]" *.csv | cut -d "," -f
+  149  grep "[0-9]" *.csv | cut -d "," -f 50
+  150  head -1 *.csv
+  151  grep "[0-9]" *.csv | cut -d "," -f 14
+  152  grep "[0-9]" *.csv | cut -d "," -f 1,14
+  153  grep "[0-9]" *.csv | cut -d "," -f 1,14| tail -5
+  154  grep "[0-9]" *.csv | cut -d "," -f 1,14| tail -5 > last_5.txt
+  155  grep "[0-9]" *.csv | cut -d "," -f 1,2,14
+  156  clear
+  157  man sort
+  158  bash myscript.sh -G*.csv
+  159  bash myscript.sh GLB.Ts+dSST.txt
+  160  bash myscript.sh GLB.Ts+dSST.csv
+  161  bash myscript.sh 
+  162  bash myscript.sh GLB.Ts+dSST.csv
+  163  bash myscript.shGLB.Ts+dSST.csv
+  164  bash myscript.sh GLB.Ts+dSST.csv
+  165  head -1 *.tsv
+  166  cd
+  167  head -1 *.tsv
+  168  head -1 signif.txt.tsv | awk -F'\t' '{print NF}'
+  169  head *.tsv
+  170  man cut
+  171  cut -d " " -f 3,10,18
+  172  cut -f 3,10,18 *.tsv
+  173  cut -f 3,10,18 *.tsv >Year_Mag_Country.tsv
+  174  cut -f 3,10,18 *.tsv > Year_Mag_Country.tsv
+  175  head Year_Mag_Country.tsv
+  176  cut -f 3,10,18 signif.txt.tsv > Year_Mag_Country.tsv
+  177  head Year_Mag_Country.tsv
+  178  man sort
+  179  sort -g
+  180  sort -g 2 Year_Mag_Country.tsv
+  181  sort -g -k 2 Year_Mag_Country.tsv
+  182  sort -g -k 2 Year_Mag_Country.tsv | head - 10
+  183  sort -g -k 2 Year_Mag_Country.tsv | head -10 Year_Mag_Country.tsv
+  184  sort -g -k 2 Year_Mag_Country.tsv | head -10 
+  185  sort -g -k 2 Year_Mag_Country.tsv | tail -10 
+  186  man cut
+  187  man uniq
+  188  cut -d -f3 Y*.tsv|uniq -c
+  189  cut -f3 Y*.tsv|uniq -c
+  190  cut -f3 Y*.tsv|uniq -c|wc
+  191  cut -f3 Y*.tsv|sort|unique
+  192  cut -f3 Y*.tsv|sort|unqi
+  193  cut -f3 Y*.tsv|sort|uniq
+  194  cut -f3 Y*.tsv|sort|uniq|wc
+  195  grep "USA" Y*.csv
+  196  grep "USA" Y*.tsv
+  197  grep "USA" Y*.tsv | wc
+  198  man grep
+  199  grep "USA" Y*.tsv | grep -v "USA TERRITORY"
+  200  grep "USA" Y*.tsv | grep -v "USA TERRITORY"|wc
+  201  man uniq
+  202  cut -f3 Y*.tsv|sort|uniq -c|head -10
+  203  cut -f3 Y*.tsv|sort|uniq -c|sort -g -f1|head -10
+  204  cut -f3 Y*.tsv|sort|uniq -c|sort -g|head -10
+  205  cut -f3 Y*.tsv|sort|uniq -c|sort -g|tail -10
+  206  pwd
+  207  bash countEq.sh USA
+  208  man echo
+  209  bash countEq_getLargestEq.sh USA
+  210  bash countEq_getLargestEq.sh CHILIE
+  211  bash countEq_getLargestEq.sh CHILEI
+  212  bash countEq_getLargestEq.sh CHILE
+  213  head -1 signif.txt.tsv
+  214  less Year_Mag_Country.tsv
+  215  uniq -c Year_Mag_Country.tsv
+  216  cut -f1|uniq -c
+  217  cut -f1 Year_Mag_Country.tsv|uniq -c
+  218  cut -f1 Year_Mag_Country.tsv|uniq -c|sort
+  219  cut -f1 Year_Mag_Country.tsv|uniq -c|sort -g
+  220  cut -f1 Year_Mag_Country.tsv|uniq -c|sort -g|tail -10
+  221  git init
+  222  cd Assignment_2
+  223  git init
+  224  git add .
+  225  git commit
+  226  git commit -m "upload assignment"
+  227  git push
+  228  git push https://github.com/ch3995-jeff/Assignment_2.git
+  229  git remote set-url origin git@github.com:ch3995-jeff/Assignment_2.git 
+  230  git remote add origin git@github.com:ch3995-jeff/Assignment_2.git 
+  231  git push https://github.com/ch3995-jeff/Assignment_2
+  232  git remote add origin git@github.com:ch3995-jeff/Assignment_2.git 
+  233  git remote set-url origin git@github.com:ch3995-jeff/Assignment_2.git 
+  234  git push https://github.com/ch3995-jeff/Assignment_2
+  235  git push
+  236  git push -u origin main
+  237  git branch
+  238  git push -u origin master
+  239  cd assignments
+  240  cd
+  241  cd assignments
+  242  git remote set-url origin git@github.com:ch3995-jeff/assignments.git 
+  243  git add .
+  244  git commit -m "assignment 2"
+  245  git push
+  246  git add .
+  247  git commit -m "assignment 2"
+  248  git push
+  249  history > log.txt
